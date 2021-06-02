@@ -52,6 +52,7 @@ while True:
     cTime = time.time()
     fps = 1 / (cTime - pTime)
     pTime = cTime
+    # Считает количество раз за одну минуту
     cv2.putText(img, str(int(fps)), (50, 100), cv2.FONT_HERSHEY_PLAIN, 5,
                 (255, 0, 0), 5)
 
